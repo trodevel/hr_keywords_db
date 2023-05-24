@@ -26,7 +26,7 @@ from hr_keywords.python.languages import Language
 
 class localizedict:
 
-    def __init__( self, lang: ):
+    def __init__( self, lang: Language ):
         pass
 
     def __str__(self):
