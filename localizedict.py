@@ -43,6 +43,10 @@ class localizedict:
 
     ##########################################################
 
+    def _generate_filename( prefix: str, lang: Language ) -> str:
+        res = f"{prefix}.{lang.name}.csv"
+        return res
+
     def _load_elem_v_1( data: list ) -> []:
 
         if len( data ) < 2:
