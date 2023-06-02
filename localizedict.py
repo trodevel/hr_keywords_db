@@ -43,7 +43,7 @@ class localizedict:
 
     ##########################################################
 
-    def _load_elem_v_1( data: list, filename: str, is_inverse: bool ) -> [ key, val ]:
+    def _load_elem_v_1( data: list ) -> []:
 
         if len( data ) < 2:
             raise Exception( f"load_elem_v_1: broken record in {filename}: expected 2 or more fields, {len(data)} is given" )
