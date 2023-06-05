@@ -29,17 +29,18 @@ class localizedict:
 
     dictt: dict = None
 
-    def __init__( self, lang: Language ):
-        pass
+    def __init__( self, prefix: str, lang: Language ):
+        filename = _generate_filename( prefix, lang )
+        self._load( filename )
 
     def __str__(self):
         return ""
 
     def __len__( self ):
-        return 0
+        return len( self.dictt )
 
     def get( self, idd: int ):
-        pass
+        return self.dictt[ idd ]
 
     ##########################################################
 
