@@ -48,7 +48,7 @@ class localizedict:
         res = f"{prefix}.{lang.name}.csv"
         return res
 
-    def _load_elem_v_1( data: list ) -> []:
+    def _load_elem_v_1( data: list, filename: str ) -> []:
 
         if len( data ) < 2:
             raise Exception( f"load_elem_v_1: broken record in {filename}: expected 2 or more fields, {len(data)} is given" )
@@ -66,7 +66,7 @@ class localizedict:
 
         for row in reader:
 
-            key, val = _load_elem_v_1( row, filename, is_inverse )
+            key, val = localizedict._load_elem_v_1( row, filename, is_inverse )
             res[ key ] = val
 
         #print( "INFO: read {} records from {} (v1)".format( len( res ), filename ) )
