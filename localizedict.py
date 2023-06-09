@@ -76,7 +76,7 @@ class localizedict:
     def _load( self, filename: str ):
 
         with open( filename ) as csvfile:
-            self.dictt = load_v_1( csvfile, filename )
+            self.dictt = localizedict._load_v_1( csvfile, filename )
 
 
 ##########################################################
