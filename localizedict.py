@@ -68,8 +68,9 @@ class localizedict:
 
             key, val = localizedict._load_elem_v_1( row, filename )
             res[ key ] = val
+            print( f"DEBUG: _load_v_1: key {key}, val {val}" )
 
-        #print( "INFO: read {} records from {} (v1)".format( len( res ), filename ) )
+        print( "INFO: _load_v_1: read {} records from {} (v1)".format( len( res ), filename ) )
 
         return res
 
@@ -77,6 +78,8 @@ class localizedict:
 
         with open( filename ) as csvfile:
             self.dictt = localizedict._load_v_1( csvfile, filename )
+
+        print( f"INFO: _load: read {len(self.dictt)} records from {filename}" )
 
 
 ##########################################################

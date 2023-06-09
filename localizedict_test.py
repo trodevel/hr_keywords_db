@@ -84,7 +84,7 @@ def test_01():
 
     idd = 2867714
 
-    word = d.exists( idd )
+    word = d.get( idd )
 
     print( f"test_01: id '{idd}', word = {word}" )
 
