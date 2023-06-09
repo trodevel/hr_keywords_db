@@ -30,7 +30,7 @@ class localizedict:
     dictt: dict = None
 
     def __init__( self, prefix: str, lang: Language ):
-        filename = _generate_filename( prefix, lang )
+        filename = localizedict._generate_filename( prefix, lang )
         self._load( filename )
 
     def __str__(self):
