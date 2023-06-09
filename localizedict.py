@@ -34,7 +34,7 @@ class localizedict:
         self._load( filename )
 
     def __str__(self):
-        return ""
+        return str( self.dictt )
 
     def __len__( self ):
         return len( self.dictt )
@@ -68,7 +68,7 @@ class localizedict:
 
             key, val = localizedict._load_elem_v_1( row, filename )
             res[ key ] = val
-            print( f"DEBUG: _load_v_1: key {key}, val {val}" )
+            #print( f"DEBUG: _load_v_1: key {key}, val {val}" )
 
         print( "INFO: _load_v_1: read {} records from {} (v1)".format( len( res ), filename ) )
 
@@ -80,6 +80,7 @@ class localizedict:
             self.dictt = localizedict._load_v_1( csvfile, filename )
 
         print( f"INFO: _load: read {len(self.dictt)} records from {filename}" )
+        print( f"INFO: _load: dict {self.dictt}" )
 
 
 ##########################################################
