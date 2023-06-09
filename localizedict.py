@@ -53,7 +53,7 @@ class localizedict:
         if len( data ) < 2:
             raise Exception( f"load_elem_v_1: broken record in {filename}: expected 2 or more fields, {len(data)} is given" )
 
-        key                 = data[0]
+        key                 = int( data[0] )
         val                 = data[1]
 
         return key, val
@@ -80,7 +80,5 @@ class localizedict:
             self.dictt = localizedict._load_v_1( csvfile, filename )
 
         print( f"INFO: _load: read {len(self.dictt)} records from {filename}" )
-        print( f"INFO: _load: dict {self.dictt}" )
-
 
 ##########################################################
