@@ -66,7 +66,7 @@ class localizedict:
 
         for row in reader:
 
-            key, val = localizedict._load_elem_v_1( row, filename, is_inverse )
+            key, val = localizedict._load_elem_v_1( row, filename )
             res[ key ] = val
 
         #print( "INFO: read {} records from {} (v1)".format( len( res ), filename ) )
