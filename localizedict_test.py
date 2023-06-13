@@ -61,7 +61,7 @@ def create_dict_02_en():
     global gl_dict_03
 
     if not gl_dict_03:
-        gl_dict_02 = localizedict.localizedict( "resources/specialization", Language.en )
+        gl_dict_02 = localizedict.localizedict( "resources/specializations", Language.en )
 
     return gl_dict_03
 
@@ -72,7 +72,7 @@ def create_dict_02_ru():
     global gl_dict_04
 
     if not gl_dict_04:
-        gl_dict_04 = localizedict.localizedict( "resources/specialization", Language.ru )
+        gl_dict_04 = localizedict.localizedict( "resources/specializations", Language.ru )
 
     return gl_dict_04
 
