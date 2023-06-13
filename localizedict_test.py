@@ -30,6 +30,7 @@ gl_dict_01_en = None
 gl_dict_01_ru = None
 gl_dict_02_en = None
 gl_dict_02_ru = None
+gl_dict_03 = None
 
 ##########################################################
 
@@ -63,6 +64,17 @@ def create_dict_02_en():
         gl_dict_02_en = localizedict.localizedict( "resources/specializations", Language.en )
 
     return gl_dict_02_en
+
+##########################################################
+
+def create_dict_03():
+
+    global gl_dict_03
+
+    if not gl_dict_03:
+        gl_dict_03 = localizedict.localizedict( "resources/specializations", Language.en, True )
+
+    return gl_dict_03
 
 ##########################################################
 
@@ -125,6 +137,33 @@ def test_04():
 
 ##########################################################
 
+def test_05():
+
+    d = create_dict_02_en()
+
+    idd = 10000
+
+    word = d.get( idd )
+
+    print( f"test_05: id '{idd}', word = {word}" )
+
+##########################################################
+
+def test_06():
+
+    d = create_dict_03()
+
+    idd = 10000
+
+    try:
+        word = d.get( idd )
+
+        print( f"test_06: id '{idd}', word = {word}" )
+
+    except e as Exception:
+
+        print( f"test_06: id '{idd}', got exception {e}" )
+
 ##########################################################
 
 def test():
@@ -133,8 +172,8 @@ def test():
     test_02()
     test_03()
     test_04()
-#    test_05()
-#    test_06()
+    test_05()
+    test_06()
 
 ##########################################################
 
