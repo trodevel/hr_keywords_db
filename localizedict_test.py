@@ -26,55 +26,54 @@ import localizedict
 
 ##########################################################
 
-gl_dict_01 = None
-gl_dict_02 = None
-gl_dict_03 = None
-gl_dict_04 = None
-gl_dict_05 = None
+gl_dict_01_en = None
+gl_dict_01_ru = None
+gl_dict_02_en = None
+gl_dict_02_ru = None
 
 ##########################################################
 
 def create_dict_01_en():
 
-    global gl_dict_01
+    global gl_dict_01_en
 
-    if not gl_dict_01:
-        gl_dict_01 = localizedict.localizedict( "resources/locations", Language.en )
+    if not gl_dict_01_en:
+        gl_dict_01_en = localizedict.localizedict( "resources/locations", Language.en )
 
-    return gl_dict_01
+    return gl_dict_01_en
 
 ##########################################################
 
 def create_dict_01_ru():
 
-    global gl_dict_02
+    global gl_dict_01_ru
 
-    if not gl_dict_02:
-        gl_dict_02 = localizedict.localizedict( "resources/locations", Language.ru )
+    if not gl_dict_01_ru:
+        gl_dict_01_ru = localizedict.localizedict( "resources/locations", Language.ru )
 
-    return gl_dict_02
+    return gl_dict_01_ru
 
 ##########################################################
 
 def create_dict_02_en():
 
-    global gl_dict_03
+    global gl_dict_02_en
 
-    if not gl_dict_03:
-        gl_dict_02 = localizedict.localizedict( "resources/specializations", Language.en )
+    if not gl_dict_02_en:
+        gl_dict_02_en = localizedict.localizedict( "resources/specializations", Language.en )
 
-    return gl_dict_03
+    return gl_dict_02_en
 
 ##########################################################
 
 def create_dict_02_ru():
 
-    global gl_dict_04
+    global gl_dict_02_ru
 
-    if not gl_dict_04:
-        gl_dict_04 = localizedict.localizedict( "resources/specializations", Language.ru )
+    if not gl_dict_02_ru:
+        gl_dict_02_ru = localizedict.localizedict( "resources/specializations", Language.ru )
 
-    return gl_dict_04
+    return gl_dict_02_ru
 
 ##########################################################
 
