@@ -28,10 +28,12 @@ import csv
 class localizedict:
 
     dictt: dict = None
+    throw_on_error: bool = None
 
-    def __init__( self, prefix: str, lang: Language ):
+    def __init__( self, prefix: str, lang: Language, throw_on_error: bool = False ):
         filename = localizedict._generate_filename( prefix, lang )
         self._load( filename )
+        self.throw_on_error = throw_on_error
 
     def __str__(self):
         return str( self.dictt )
