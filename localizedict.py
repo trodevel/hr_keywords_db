@@ -42,7 +42,11 @@ class localizedict:
         return len( self.dictt )
 
     def get( self, idd: int ):
-        return self.dictt[ idd ]
+
+        if self.throw_on_error or ( idd in self.dictt ):
+            return self.dictt[ idd ]
+
+        return str( idd )
 
     ##########################################################
 
