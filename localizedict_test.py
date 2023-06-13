@@ -160,7 +160,7 @@ def test_06():
 
         print( f"test_06: id '{idd}', word = {word}" )
 
-    except e as Exception:
+    except Exception as e:
 
         print( f"test_06: id '{idd}', got exception {e}" )
 
