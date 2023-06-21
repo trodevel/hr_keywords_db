@@ -20,7 +20,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 '''
 
-from hr_keywords.python.languages import Language
+from languages.python.languages import Language
 
 import localizedict
 
