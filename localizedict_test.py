@@ -39,7 +39,7 @@ def create_dict_01_en():
     global gl_dict_01_en
 
     if not gl_dict_01_en:
-        gl_dict_01_en = localizedict.localizedict( "externals/hr_locations/locations", Language.en )
+        gl_dict_01_en = localizedict.localizedict( "externals/locations/locations", Language.en )
 
     return gl_dict_01_en
 
@@ -50,7 +50,7 @@ def create_dict_01_ru():
     global gl_dict_01_ru
 
     if not gl_dict_01_ru:
-        gl_dict_01_ru = localizedict.localizedict( "externals/hr_locations/locations", Language.ru )
+        gl_dict_01_ru = localizedict.localizedict( "externals/locations/locations", Language.ru )
 
     return gl_dict_01_ru
 
@@ -61,7 +61,7 @@ def create_dict_02_en():
     global gl_dict_02_en
 
     if not gl_dict_02_en:
-        gl_dict_02_en = localizedict.localizedict( "externals/hr_specializations/specializations", Language.en )
+        gl_dict_02_en = localizedict.localizedict( "externals/specializations/specializations", Language.en )
 
     return gl_dict_02_en
 
@@ -72,7 +72,7 @@ def create_dict_03():
     global gl_dict_03
 
     if not gl_dict_03:
-        gl_dict_03 = localizedict.localizedict( "externals/hr_specializations/specializations", Language.en, True )
+        gl_dict_03 = localizedict.localizedict( "externals/specializations/specializations", Language.en, True )
 
     return gl_dict_03
 
@@ -83,7 +83,7 @@ def create_dict_02_ru():
     global gl_dict_02_ru
 
     if not gl_dict_02_ru:
-        gl_dict_02_ru = localizedict.localizedict( "externals/hr_specializations/specializations", Language.ru )
+        gl_dict_02_ru = localizedict.localizedict( "externals/specializations/specializations", Language.ru )
 
     return gl_dict_02_ru
 
